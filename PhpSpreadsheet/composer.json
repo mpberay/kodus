@@ -1,0 +1,12 @@
+{
+    "name": "jmaeacido/spreadsheet",
+    "description": "PhpSpreadsheet",
+    "authors": [
+        {
+            "name": "jmaeacido"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

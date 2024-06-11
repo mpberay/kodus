@@ -1,0 +1,95 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+	height: 100%;
+	width: 150px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #ccc;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+
+/* Side navigation links */
+.sidenav a, .dropdown-btn {
+	width: 100%;
+	text-align: left;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+/* Change color on hover */
+.sidenav a:hover, .dropdown-btn:hover {
+	background-color: #ddd;
+	color: black;
+	transition-duration: 0.3s;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: lightgray;
+	padding-left: 8px;
+}
+
+/* Style the caret down icon */
+.fa-caret-down, .fa-caret-right {
+	float: right;
+}
+
+#navBtn {
+	position: relative;
+	top: -5px;
+	border-radius: 100%;
+	border: none;
+	padding: 5px 8px 5px 8px;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+
+#navBtn:hover {
+	background-color: gray;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+/* Style the content */
+.content {
+	margin-left: 150px;
+	padding-left: 20px;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.logo {
+	border: none;
+	border-radius: 100%;
+	height: 58px;
+	position: relative;
+	top: 7px;
+	left: 45px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
